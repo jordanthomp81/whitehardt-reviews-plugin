@@ -1,0 +1,298 @@
+@import "styles/bootstrap-theme.min.css";
+@import "styles/bootstrap.min.css";
+
+div#frm_field_72_container {
+  display: none;
+}
+
+// Hotfixes to make it work on kennun site
+// .custom-review-headline-container {
+//   padding: 0 !important;
+//   margin-bottom: 30px;
+//
+//   .review-page-title {
+//     margin: 0 !important;
+//     margin-top: 20px !important;
+//     margin-bottom: 30px !important;
+//   }
+//
+//   .review-page-title {
+//     padding: 0 !important;
+//   }
+//
+//   .post-review-btn {
+//     margin-top: 30px !important;
+//     min-height: 35px !important;
+//     padding: 0 !important;
+//     margin-bottom: 30px !important;
+//
+//     a {
+//       font-weight: bold !important;
+//       background-color: #C21917;
+//       padding: 10px 20px;
+//       color: white;
+//       font-size: 13px !important;
+//       border-radius: 5px;
+//       tranisiton: all .3s ease;
+//
+//       &:hover {
+//         text-decoration: none !important;
+//         background-color: lighten(#C21917, 9%);
+//       }
+//     }
+//   }
+// }
+//
+// div#frm_field_65_container {
+//     display: none;
+// }
+//
+// div#frm_form_5_container {
+//     margin-top: 35px;
+// }
+//
+// .custom-review-icon.col-lg-12.col-md-12.col-sm-3.col-xs-3 {
+//   background-color: #3484C0;
+// }
+//
+// .reviewer-details-container.col-lg-10.col-md-9.col-sm-12.col-xs-12 {
+//   @media (max-width: 1196px ) and (min-width: 991px ){
+//     margin-top: 20px;
+//   }
+//
+//   @media (max-width: 991px ) {
+//     margin-top: 20px;
+//   }
+// }
+//
+// .frm_submit input {
+//   background-color: #C21917 !important;
+//   font-family: "Helvetica" !important;
+//   padding-top: 7px !important;
+//   color: white !important;
+//   border: none !important;
+//   padding: 15px 30px !important;
+//   height: auto !important;
+//   width: auto !important;
+//   font-size: 18px !important;
+//   font-weight: bold !important;
+//   text-transform: uppercase !important;
+//   transition: all .3s ease;
+//
+//   &:hover {
+//     background-color: lighten(#C21917, 9%) !important;
+//   }
+// }
+//
+// h3.custom-review-title.col-lg-12 {
+//   text-transform: none !important;
+//   margin: 0 0 6px 0 !important;
+// }
+//
+// .custom-review .col-lg-12 {
+//   padding: 0 !important;
+// }
+//
+// p.custom-review-name {
+//     display: inline !important;
+// }
+//
+// .custom-review-icon.col-lg-12.col-md-12.col-sm-3.col-xs-3 p {
+//   width: 60px !important;
+//   color: white !important;
+//   margin: 0 auto !important;
+//   font-size: 13px !important;
+//   margin-top: 2px !important;
+// }
+//
+// img.custom-review-rating-icon {
+//   margin-bottom: 4px;
+// }
+//
+// .custom-review {
+//   &:first-of-type {
+//     margin-top: 20px;
+//
+//     @media (max-width: 991px ) {
+//       margin-top: 200px;
+//     }
+//   }
+// }
+//
+// p.custom-review-response.col-lg-12 {
+//   padding-left: 15px !important;
+//   margin-top: 20px !important;
+// }
+//
+// .custom-review-icon-featured p {
+//   font: 16px 'Helvetica' !important;
+//   width: 60px !important;
+//   max-width: 75px !important;
+// }
+// End Hotfix
+
+.custom-review-rating-container {
+  display: inline-block;
+  max-height: 25px;
+
+  img {
+    display: inline;
+    width: 15px;
+    height: 15px;
+
+    &:first-of-type {
+      margin-left: 15px;
+    }
+
+    &:not(:first-of-type) {
+      margin-left: 5px;
+    }
+  }
+
+  p {
+    display: inline;
+  }
+
+  // h6 {
+  //   margin: 0 !important;
+  // }
+}
+
+.page-numbers {
+	display: inline-block;
+	padding: 5px 10px;
+	margin: 15px 2px 0 0;
+	border: 1px solid #eee;
+	line-height: 1;
+	text-decoration: none;
+	border-radius: 2px;
+  font-family: 'Helvetica';
+	font-weight: 600;
+  font-size: 15px;
+  width: auto !important;
+
+  .current, a.page-numbers:hover {
+  	background: #f9f9f9;
+  }
+}
+
+.page-numbers.current, a.page-numbers:hover {
+  border-bottom-color: #C21917;
+	background: #f9f9f9;
+}
+
+.custom-review {
+  padding: 0;
+  &:not(:first-of-type) {
+    margin-top: 40px;
+  }
+
+  .reviewer-details-container {
+    margin-bottom: 10px;
+    @media (max-width: 1196px ) and (min-width: 991px ){
+      padding: 0;
+    }
+
+    @media (max-width: 991px ) {
+      .custom-review-title {
+        margin-left: 0;
+        margin-top: 25px;
+      }
+
+      .col-lg-12 {
+        padding: 0;
+      }
+    }
+  }
+
+  .custom-review-response {
+    clear: both;
+  }
+
+  .custom-review-date {
+    display: inline-block;
+    color: lighten(#333333, 15%);
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    margin-top: 2px;
+  }
+
+  .custom-review-location {
+    display: inline-block;
+    color: lighten(#333333, 15%);
+    font-weight: normal;
+    font-family: Helvetica;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .custom-review-name {
+    display: inline-block;
+    color: lighten(#333333, 20%);
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    color: lighten(#333333, 15%);
+    font-family: Helvetica;
+    font-size: 18px;
+    padding-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+
+  .custom-review-icon {
+    background-color: #2FB2E6;
+    height: 85px;
+    float: left;
+    border-radius: 10px;
+    position: relative;
+
+    img.custom-review-image {
+      width: 40px;
+      height: 40px;
+      margin-left: 50%;
+      margin-top: 15px;
+      transform: translateX(-50%);
+    }
+
+    .custom-review-icon-featured {
+      background-color: #F5921E;
+      height: 20px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-radius: 0 0 10px 10px;
+
+      p {
+        padding: 0;
+        margin: 0 auto;
+        margin-top: 2px;
+        max-width: 50px;
+        font-family: Helvetica;
+        color: white;
+        font-size: 10px;
+      }
+    }
+  }
+
+  .custom-review-title {
+    display: inline-block;
+    float: none;
+    margin: 0;
+    font-family: Helvetica;
+    color: lighten(#333333, 5%);
+    font-size: 20px;
+    padding: 0;
+    margin-left: 15px;
+  }
+}
